@@ -1,7 +1,9 @@
-const Style = {
+const Styless = {
+
+
     topHeader: {
         backgroundColor: 'red'
     }
 }
 
-export default Style;
+export default Styless;

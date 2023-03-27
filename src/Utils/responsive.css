@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1023px) {
+    .topHeader {
+        text-align: start;
+        margin-left:30px;
+        margin-top:10px;
+        font-size: x-large;
+        color: white;
+        opacity: 0.7;
+        font-family: Inter;
+        font-weight: 700;
+    }
+    .App {
+        font-family: sans-serif;
+        text-align: center;
+        color: brown;
+    }
+
+
+
+    .experienceFirstText{
+        font-size: 50px;
+        text-align: justify;
+
+    }
+
+    .experienceSecondText{
+        font-size: 18px;
+        text-align: justify;
+
+    }
+
+    .hello {
+        color: brown;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .topHeader {
+        backgroundColor: 'blue'
+    }
+    .App {
+        font-family: Sathu;
+        text-align: center;
+        color: purple;
+    }
+
+    .title{
+        height: 300px;
+    }
+
+    .titleText{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .hello {
+        color: purple;
+    }
+}
