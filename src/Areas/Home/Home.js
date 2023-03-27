@@ -65,14 +65,9 @@ function Home() {
                 display: 'flex',
                 alignItems: 'start', // Optional: Align items vertically centered
             }}>
-                <div
+                <div className="ExperienceImage"
                     style={{
-                        marginTop: '30px',
-                        marginLeft: '15px',
-                        height: '162px',
-                        width: '500px',
-                        backgroundImage: `url(${experience_image_url})`,
-                        backgroundSize: 'cover',
+                        backgroundImage: `url(${experience_image_url})`
                     }}
                 />
                 <div
@@ -165,7 +160,7 @@ function Home() {
                 alignItems: 'start', // Optional: Align items vertically centered
             }}>
 
-                <div
+                <div className="WhyUsLeftSide"
                     style={{
                         display: 'flex',
                         flexDirection: 'column', // Add flexDirection: 'column' to stack child elements vertically
@@ -181,18 +176,9 @@ function Home() {
 
                         }}
                     />
-
-
                 </div>
 
-                <div
-                    style={{
-                        display: 'flex',
-                        flexDirection: 'column', // Add flexDirection: 'column' to stack child elements vertically
-                        marginTop:'30px'
-                    }}
-                >
-
+                <div className="WhyUsGroupCheck">
 
                     <div style={{
 
@@ -202,7 +188,7 @@ function Home() {
                         <div className="WhyUsCheckPoint">
                             &#10003;
                         </div>
-                        <div style={{fontSize:"10px", marginLeft:'5px'}}>
+                        <div className="WhyUsTextCheck">
                             Trained and experienced cleaners
                         </div>
                     </div>
@@ -214,7 +200,7 @@ function Home() {
                         <div className="WhyUsCheckPoint">
                             &#10003;
                         </div>
-                        <div style={{fontSize:"10px", marginLeft:'10px'}}>
+                        <div className="WhyUsTextCheck">
                             Quality cleaning services at affordable prices
                         </div>
                     </div>
@@ -226,7 +212,7 @@ function Home() {
                         <div className="WhyUsCheckPoint">
                             &#10003;
                         </div>
-                        <div style={{fontSize:"10px", marginLeft:'5px'}}>
+                        <div className="WhyUsTextCheck">
                             Flexible scheduling options
                         </div>
                     </div>
@@ -238,7 +224,7 @@ function Home() {
                         <div className="WhyUsCheckPoint">
                             &#10003;
                         </div>
-                        <div style={{fontSize:"10px", marginLeft:'5px'}}>
+                        <div className="WhyUsTextCheck">
                             Environmentally-friendly cleaning products used
                         </div>
                     </div>
@@ -250,7 +236,7 @@ function Home() {
                         <div className="WhyUsCheckPoint">
                             &#10003;
                         </div>
-                        <div style={{fontSize:"10px", marginLeft:'5px'}}>
+                        <div className="WhyUsTextCheck">
                             100% satisfaction guarantee
                         </div>
                     </div>
@@ -259,8 +245,8 @@ function Home() {
 
             </div>
 
-            <div ref={targetDivRefContact} style={{backgroundColor:'#D9D9D9', height:'125px', marginTop:'25px'}}>
-                <div style={{paddingTop: '10px'}}>
+            <div ref={targetDivRefContact} style={{backgroundColor:'#D9D9D9', height:'140px', marginTop:'25px'}}>
+                <div className="AboutUsCollection" style={{paddingTop: '10px'}}>
                     <div style={{fontSize:"15px", marginLeft:'15px', fontWeight:"bold"}}>
                         Contact Us
                     </div>

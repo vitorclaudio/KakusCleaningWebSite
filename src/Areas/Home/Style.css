@@ -1,6 +1,11 @@
 .topHeader {
-
+    text-align: start;
+    margin-top:10px;
+    font-size: x-large;
+    color: white;
+    opacity: 0.7;
     font-family: Inter;
+    font-weight: 700;
 }
 .App {
     font-family: sans-serif;
@@ -9,10 +14,11 @@
 .titleOptions{
     color: white;
     display: flex;
-    font-size: 8px;
-    align-items: flex-end;
     margin-bottom: 10px;
+    align-items: flex-end;
 }
+
+
 .containerStyle{
     position: relative;
     display: flex;
@@ -21,20 +27,23 @@
     width: 100%;
     height: 100%;
 }
+.WhyUsLeftSide{
 
+}
 .WhyUsTitleText{
     margin-left: 20px;
     margin-top: 20px;
-    font-size: 20px;
     text-align: center;
 }
 
 .WhyUsImage{
     margin-top: 10px;
     margin-left: 15px;
-    height: 100px;
-    width: 130px;
     background-size: cover;
+}
+
+.WhyUsGroupCheck{
+    display: flex;
 }
 
 .WhyUsCheckPoint{
@@ -62,6 +71,12 @@
     color: white;
 
 }
+.ExperienceImage{
+    margin-top: 30px;
+    height: 162px;
+    background-size: cover;
+}
+
 .ExperienceTextDate {
     font-weight: 500;
     font-size: 40px;
@@ -73,8 +88,6 @@
     justifyItems: center;
     margin-left: 15px;
     margin-top:10px;
-    font-size: 10px;
-
 }
 
 .ExperienceContactButton{
@@ -84,7 +97,6 @@
     height: 30px;
     width: 100px;
     margin-left: 15px;
-    margin-top: 20px;
     background-color: #FFD563;
 }
 
@@ -92,9 +104,7 @@
 
 .OurServicesTitleText{
     display: flex;
-    font-size: 20px;
     color: black;
-    margin-top: 30px;
     justify-content: center;
     align-items: center;
 
@@ -102,15 +112,12 @@
 
 .OurServicesImages {
     margin-top: 20px;
-    height: 100px;
-    width: 100px;
     background-size: cover;
     border-radius: 50%;
 }
 
 .OurServicesText{
     width: 100%;
-    font-size:10px;
     text-align: center;
     margin-top: 10px;
     padding: 0 5px;
@@ -132,5 +139,4 @@
     color: white;
     max-width: 80%; /* Add this line to limit the width of the subtitle text */
 }
-.hello {
-}
+
