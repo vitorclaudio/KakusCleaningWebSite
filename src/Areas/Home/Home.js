@@ -5,9 +5,7 @@ import OurService1 from '../../Images/OurServices1.jpeg';
 import OurService2 from '../../Images/OurServices2.png';
 import OurService3 from '../../Images/OurServices3.jpeg';
 
-
 function Home() {
-    const title_image_url = 'https://bookdirtbusters.com/wp-content/uploads/2020/10/Cleaning-supplies.png';
     const experience_image_url = 'https://cleanmypremises.ca/wp-content/uploads/2021/04/woman-with-gloves-cleaning-solution-disinfecting-gym-equipment.jpg'
     const targetDivRefAboutUs = useRef(null);
     const targetDivRefOurServices = useRef(null);
