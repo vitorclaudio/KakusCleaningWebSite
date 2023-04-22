@@ -17,12 +17,13 @@
     .ExperienceImage{
         margin-left: 15px;
         height: 162px;
-        width: 500px;
+        width: 700px;
 
     }
 
     .ExperienceTextDescription{
         font-size: 10px;
+        margin-right: 35px;
     }
 
     .ExperienceContactButton{

@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import { useState } from 'react';
+import { FaCopy } from 'react-icons/fa';
 import titleImage from '../../Images/TitleImage1.png';
 import whyUsImage from '../../Images/WhyUs.jpeg';
 import OurService1 from '../../Images/OurServices1.jpeg';
@@ -11,6 +13,26 @@ function Home() {
     const targetDivRefOurServices = useRef(null);
     const targetDivRefWhyUs = useRef(null);
     const targetDivRefContact = useRef(null);
+
+    const [phoneCopied, setPhoneCopied] = useState(false);
+    const [emailCopied, setEmailCopied] = useState(false);
+
+    const handleCopyPhone = () => {
+        navigator.clipboard.writeText('+1 (475) 377-2482');
+        setPhoneCopied(true);
+        setTimeout(() => {
+            setPhoneCopied(false);
+        }, 2000);
+    };
+
+    const handleCopyEmail = () => {
+        navigator.clipboard.writeText('contact@kakuscleaning.com');
+        setEmailCopied(true);
+        setTimeout(() => {
+            setEmailCopied(false);
+        }, 2000);
+    };
+
 
 
     function scrollToTargetDivAboutUs() {
@@ -55,8 +77,8 @@ function Home() {
             }}>
                 <div className='titleText' style={{opacity:'70%'}}>The Best & Trusted</div>
                 <div className='titleText' style={{opacity:'70%', fontSize:'30px'}}>Cleaning Services</div>
-                <div className='titleSubText'>We are a professional cleaning company specializing in providing
-                    top-notch cleaning services to commercial properties.</div>
+                <div className='titleSubText'>A clean and organized workspace boosts employee productivity and enhances your
+                    business's image with customers.</div>
             </div>
 
             <div style={{
@@ -91,9 +113,9 @@ function Home() {
                         <div style={{justifyItems: 'center', opacity:'50%'}}>Years Experience</div>
                     </div>
                 </div>
-                        <div className="ExperienceTextDescription">Our team of trained and experienced
-                            cleaners are dedicated to making your space spotless and leaving you with a sense of peace
-                            and comfort.
+                        <div className="ExperienceTextDescription">Concentrate on your business while trusted experts with
+                            20 years of experience handle the cleaning. Our rigorously trained team ensures top-notch
+                            cleaning, organization, and a pleasant work atmosphere.
                         </div>
 
                     <div onClick={scrollToTargetDivContact} className="ExperienceContactButton" >
@@ -260,22 +282,70 @@ function Home() {
                         <div style={{fontSize:"10px", marginLeft:'15px'}}>
                             Phone:
                         </div>
-                        <div style={{fontSize:"10px", marginLeft:'5px', fontWeight:"bold"}}>
+                        <div
+                            style={{
+                                fontSize: '10px',
+                                marginLeft: '5px',
+                                fontWeight: 'bold',
+                                display: 'flex',
+                                alignItems: 'center',
+                            }}
+                        >
                             +1 (475) 377-2482
+                            <button
+                                style={{
+                                    marginLeft: '5px',
+                                    backgroundColor: 'transparent',
+                                    border: 'none',
+                                    cursor: 'pointer',
+                                }}
+                                onClick={handleCopyPhone}
+                            >
+                                <FaCopy />
+                            </button>
                         </div>
+                        {phoneCopied && (
+                            <div style={{ marginLeft: '5px', fontSize: '10px', color: 'green' }}>
+                                Copied!
+                            </div>
+                        )}
                     </div>
 
-                    <div style={{
-                        marginTop:'5px',
-                        display: 'flex',
-                        alignItems: 'center', // Optional: Align items vertically centered
-                    }}>
-                        <div style={{fontSize:"10px", marginLeft:'15px'}}>
-                            E-mail:
-                        </div>
-                        <div style={{fontSize:"10px", marginLeft:'3px', fontWeight:"bold"}}>
+                    <div
+                        style={{
+                            marginTop: '5px',
+                            display: 'flex',
+                            alignItems: 'center', // Optional: Align items vertically centered
+                        }}
+                    >
+                        <div style={{ fontSize: '10px', marginLeft: '15px' }}>E-mail:</div>
+                        <div
+                            style={{
+                                fontSize: '10px',
+                                marginLeft: '3px',
+                                fontWeight: 'bold',
+                                display: 'flex',
+                                alignItems: 'center',
+                            }}
+                        >
                             contact@kakuscleaning.com
+                            <button
+                                style={{
+                                    marginLeft: '5px',
+                                    backgroundColor: 'transparent',
+                                    border: 'none',
+                                    cursor: 'pointer',
+                                }}
+                                onClick={handleCopyEmail}
+                            >
+                                <FaCopy />
+                            </button>
                         </div>
+                        {emailCopied && (
+                            <div style={{ marginLeft: '5px', fontSize: '10px', color: 'green' }}>
+                                Copied!
+                            </div>
+                        )}
                     </div>
 
                     <div style={{
