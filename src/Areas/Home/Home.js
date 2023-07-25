@@ -56,10 +56,10 @@ function Home() {
                 </div>
 
                 <div className="titleOptions">
-                    <div onClick={scrollToTargetDivAboutUs} style={{marginLeft:'30px'}}>About Us</div>
-                    <div onClick={scrollToTargetDivOurServices} style={{marginLeft:'15px'}}>Our Services</div>
-                    <div onClick={scrollToTargetDivWhyUs} style={{marginLeft:'15px'}}>Why Us?</div>
-                    <div onClick={scrollToTargetDivContact} style={{marginLeft:'15px', marginRight:'10px'}}>Contact</div>
+                    <div onClick={scrollToTargetDivAboutUs} style={{marginLeft:'30px', cursor: 'pointer'}}>About Us</div>
+                    <div onClick={scrollToTargetDivOurServices} style={{marginLeft:'15px', cursor: 'pointer'}}>Our Services</div>
+                    <div onClick={scrollToTargetDivWhyUs} style={{marginLeft:'15px', cursor: 'pointer'}}>Why Us?</div>
+                    <div onClick={scrollToTargetDivContact} style={{marginLeft:'15px', marginRight:'10px', cursor: 'pointer'}}>Contact</div>
                 </div>
             </div>
 
@@ -76,7 +76,7 @@ function Home() {
                 backgroundImage : `url(${titleImage})`
             }}>
                 <div className='titleText' style={{opacity:'70%'}}>The Best & Trusted</div>
-                <div className='titleText' style={{opacity:'70%', fontSize:'30px'}}>Cleaning Services</div>
+                <div className='titleText2' style={{opacity:'70%'}}>Commercial Cleaning Services</div>
                 <div className='titleSubText'>A clean and organized workspace boosts employee productivity and enhances your
                     business's image with customers.</div>
             </div>
@@ -118,7 +118,7 @@ function Home() {
                             cleaning, organization, and a pleasant work atmosphere.
                         </div>
 
-                    <div onClick={scrollToTargetDivContact} className="ExperienceContactButton" >
+                    <div style={{cursor: 'pointer'}} onClick={scrollToTargetDivContact} className="ExperienceContactButton" >
                         <div>
                             Contact Us
                         </div>
@@ -146,7 +146,7 @@ function Home() {
                     }}
                 >
                     <div className="OurServicesImages" style={{backgroundImage: `url(${OurService1})`}}></div>
-                    <div className="OurServicesText">Move-In/Move-Out Cleaning</div>
+                    <div className="OurServicesText">Mirror Cleaning</div>
                 </div>
 
                 <div
@@ -170,7 +170,7 @@ function Home() {
                     }}
                 >
                     <div className="OurServicesImages" style={{backgroundImage: `url(${OurService3})`}}></div>
-                    <div className="OurServicesText">Carpet Cleaning</div>
+                    <div className="OurServicesText">Vacuum Cleaning</div>
                 </div>
             </div>
 
@@ -221,7 +221,7 @@ function Home() {
                             &#10003;
                         </div>
                         <div className="WhyUsTextCheck">
-                            Quality cleaning services at affordable prices
+                            Commitment regardless of date
                         </div>
                     </div>
                     <div style={{
@@ -234,18 +234,6 @@ function Home() {
                         </div>
                         <div className="WhyUsTextCheck">
                             Flexible scheduling options
-                        </div>
-                    </div>
-                    <div style={{
-                        marginTop:'10px',
-                        display: 'flex',
-                        alignItems: 'center', // Optional: Align items vertically centered
-                    }}>
-                        <div className="WhyUsCheckPoint">
-                            &#10003;
-                        </div>
-                        <div className="WhyUsTextCheck">
-                            Environmentally-friendly cleaning products used
                         </div>
                     </div>
                     <div style={{

@@ -6,6 +6,13 @@
         color: brown;
     }
 
+    .titleText2 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        color: white;
+    }
     .topHeader {
         margin-left:30px;
     }
@@ -125,6 +132,14 @@
         font-weight: 800;
         font-size: 24px;
         line-height: 29px;
+    }
+
+    .titleText2 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 29px;
+        color: white;
     }
     .OurServicesTitleText{
         font-size: 30px;
