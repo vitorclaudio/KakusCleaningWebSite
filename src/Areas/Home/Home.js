@@ -83,8 +83,9 @@ function Home() {
                 <div className='titleText' style={{opacity: '70%'}}>The Best & Trusted</div>
                 <div className='titleText2' style={{opacity: '70%'}}>Commercial Cleaning Services</div>
                 <div className='titleSubText'>
-                    We provide professional cleaning services for any
+                    We provide professional cleaning services for
                     commercial location, ensuring a spotless environment that leaves a lasting impression.
+                    Reliable and effective commercial cleaning!
                 </div>
 
             </div>
@@ -118,15 +119,15 @@ function Home() {
                             marginTop: '30px',
                             alignItems: 'flex-end', // Align items to the bottom
                         }}>
-                            <div className="ExperienceTextDate" style={{justifyItems: 'center'}}>20</div>
+                            <div className="ExperienceTextDate" style={{justifyItems: 'center'}}>22</div>
                             <div className="ExperienceYears" style={{justifyItems: 'center', opacity: '50%'}}>Years
                                 Experience
                             </div>
                         </div>
                     </div>
                     <div className="ExperienceTextDescription">Concentrate on your business while trusted experts with
-                        20 years of experience handle the cleaning. Our rigorously trained team ensures top-notch
-                        cleaning, organization, and a pleasant work atmosphere.
+                        22 years of experience handle the cleaning. Our rigorously trained team ensures top-notch
+                        cleaning, organization, and a pleasant work atmosphere. Cleaning professionals, partners and businesses!
                     </div>
 
                     <div style={{cursor: 'pointer'}} onClick={scrollToTargetDivContact}
