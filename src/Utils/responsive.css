@@ -6,12 +6,20 @@
         color: brown;
     }
 
+    .titleText {
+        font-size: 30px;
+
+    }
+
     .titleText2 {
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
         line-height: 29px;
+        margin-top:5px;
         color: white;
+        font-family: 'Nunito', sans-serif; /* Define a fonte Nunito */
+
     }
     .topHeader {
         margin-left:30px;
@@ -23,18 +31,32 @@
 
     .ExperienceImage{
         margin-left: 15px;
-        height: 162px;
+        height: 210px;
         width: 700px;
+
+    }
+    .ExperienceTextDate {
+        font-size: 60px;
+        line-height: 29px;
+    }
+
+  .ExperienceYears {
+        font-size: 20px;
+      margin-bottom: -10px;
 
     }
 
     .ExperienceTextDescription{
         font-size: 10px;
         margin-right: 35px;
+        margin-top:40px;
+
     }
 
     .ExperienceContactButton{
-        margin-top: 20px;
+        height: 30px;
+        width: 100px;
+        margin-top: 40px;
     }
 
 
@@ -51,8 +73,9 @@
     }
 
     .OurServicesTitleText{
-        font-size: 20px;
-        margin-top: 30px;
+        font-size: 30px;
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
     .OurServicesImages {
         height: 100px;
@@ -63,32 +86,42 @@
         font-size:10px;
     }
 
-    .WhyUsImage{
-        margin-top: 10px;
-        margin-left: 15px;
-        height: 100px;
-        width: 130px;
-        background-size: cover;
-    }
+
 
     .WhyUsImage{
-        height: 100px;
-        width: 130px;
+        height: 150px;
+        width: 200px;
+
+
     }
 
     .WhyUsTitleText{
-        font-size: 20px;
+        font-size: 30px;
+        margin-left: 5px;
+        margin-top:60px;
+
+
     }
 
     .WhyUsGroupCheck{
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 5px;
+        gap: 15px;
+        margin-bottom: 60px;
     }
 
     .WhyUsTextCheck{
         font-size: 10px;
         margin-left: 5px;
     }
+
+    .WhyUsCheckPoint{
+        height: 20px;
+        width: 20px;
+    }
+
+
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -115,16 +148,35 @@
 
     .ExperienceImage{
         margin-left: 150px;
-        width: 400px;
+        width: 700px;
+        height: 350px;
+
     }
 
+    .ExperienceYears {
+        font-size: 40px;
+        margin-bottom: -20px;
+        margin-left: 10px;
+
+    }
     .ExperienceTextDescription{
-        margin-right: 180px;
-        font-size: 15px;
-    }
+        margin-right: 60px;
+        font-size: 20px;
+        margin-top:100px;
 
+    }
+    .ExperienceTextDate {
+        font-size: 80px;
+        line-height: 29px;
+        margin-top:20px
+
+
+    }
     .ExperienceContactButton{
-        margin-top: 35px;
+        height: 50px;
+        width: 200px;
+        margin-top: 80px;
+        font-size: 20px;
     }
 
     .titleText{
@@ -134,25 +186,32 @@
         line-height: 29px;
     }
 
+
     .titleText2 {
         font-style: normal;
         font-weight: 800;
-        font-size: 30px;
+        font-size: 50px;
+        margin-top:20px;
         line-height: 29px;
         color: white;
+        font-family: 'Nunito', sans-serif; /* Define a fonte Nunito */
+
     }
     .OurServicesTitleText{
-        font-size: 30px;
-        margin-top: 50px;
+        font-size: 50px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+
     }
 
     .OurServicesImages {
-        height: 140px;
-        width: 140px;
+        height: 240px;
+        width: 240px;
     }
 
     .OurServicesText{
-        font-size:12px;
+        font-size:24px;
+        text-align: center;
     }
 
     .WhyUsLeftSide{
@@ -162,17 +221,25 @@
     }
 
     .WhyUsTitleText{
-        font-size: 30px;
+        font-size: 50px;
+        margin-top:120px;
     }
 
     .WhyUsImage{
-        height: 200px;
-        width: 230px;
+        height: 300px;
+        width: 300px;
+    }
+    .WhyUsCheckPoint{
+        height: 30px;
+        width: 30px;
+
     }
 
     .WhyUsGroupCheck{
-        margin-top: 100px;
+        margin-top: 20px;
         flex-direction: column;
+        gap:50px;
+        margin-bottom: 80px;
     }
 
     .WhyUsTextCheck{
@@ -182,5 +249,17 @@
 
     .AboutUsCollection{
         margin-left: 110px;
+    }
+
+    .titleText {
+       font-size: 50px;
+
+    }
+
+    .titleSubText {
+
+        text-align: center;
+        font-size: 24px;
+        width: 50%; /* Limita a largura do texto */
     }
 }
